@@ -11,6 +11,17 @@
     vertical-align: $valign;
 }
 
+@mixin font($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin flex-align($display: flex, $main: center, $cross: center){
+  display: $display;
+  justify-content: $main;
+  align-items: $cross;
+}
+
 @mixin placeholder($color: #000000) {
   &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: $color;
